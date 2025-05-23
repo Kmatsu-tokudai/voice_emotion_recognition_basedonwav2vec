@@ -1,0 +1,2 @@
+# voice_emotion_recognition_basedonwav2vec
+Wav2Vec2.0の日本語事前学習済みモデルをベースに，ラベル付き日本語感情音声コーパスをpytorch-lightningで学習したモデル
