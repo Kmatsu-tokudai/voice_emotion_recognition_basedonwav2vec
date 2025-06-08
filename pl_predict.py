@@ -111,7 +111,7 @@ def predict_sample():
     # TSVファイルの読み込み
     df = pd.read_csv("sample_metadata.tsv", sep="\t")
 
-    checkpoint = "lightning_logs/version_0/checkpoints/epoch=9-step=47390.ckpt"
+    checkpoint = "lightning_logs/version_5/checkpoints/epoch=9-step=25200.ckpt"
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = EmotionClassifier.load_from_checkpoint(checkpoint)
     model.to(device)
